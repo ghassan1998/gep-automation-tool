@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEP Automation Tool — Fit &amp; Sensitivity Analysis for GEP Models</title>
+<meta name="description" content="Paste your GeneXproTools equation, upload your data, and get automated fit analysis, sensitivity studies, and live-formula Excel reports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M2 18 L8 10 L13 14 L22 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="10" r="1.8" fill="currentColor"/><circle cx="13" cy="14" r="1.8" fill="currentColor"/><circle cx="22" cy="4" r="1.8" fill="currentColor"/></svg>
+      </span>
+      GEP Automation Tool
+    </div>
+    <a class="header-cta" href="https://github.com/ghassan1998/gep-automation-tool/releases/latest/download/GEP-Automation-Tool-Setup.exe">Download</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="grid-paper" aria-hidden="true"></div>
+    <div class="wrap hero-row">
+      <div class="hero-copy">
+        <p class="eyebrow">GEP MODEL VALIDATION</p>
+        <h1>From equation<br>to evidence.</h1>
+        <p class="hero-sub">Paste your GeneXproTools equation. Upload your data. Get the fit, the sensitivity study, and the report — automatically.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/ghassan1998/gep-automation-tool/releases/latest/download/GEP-Automation-Tool-Setup.exe">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v9m0 0 3.5-3.5M8 10 4.5 6.5M2 13.5h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download for Windows
+          </a>
+          <span class="cta-meta">v1.0 &nbsp;·&nbsp; ~120 MB &nbsp;·&nbsp; Windows 10/11</span>
+        </div>
+      </div>
+      <div class="hero-chart" aria-hidden="true">
+        <svg viewBox="0 0 420 320" class="fit-chart">
+          <line x1="50" y1="20" x2="50" y2="270" stroke="var(--steel)" stroke-width="1.5"/>
+          <line x1="50" y1="270" x2="400" y2="270" stroke="var(--steel)" stroke-width="1.5"/>
+          <g stroke="var(--grid-line)" stroke-width="1" stroke-dasharray="3 4">
+            <line x1="50" y1="220" x2="400" y2="220"/>
+            <line x1="50" y1="170" x2="400" y2="170"/>
+            <line x1="50" y1="120" x2="400" y2="120"/>
+            <line x1="50" y1="70" x2="400" y2="70"/>
+          </g>
+          <polyline id="fitLine" points="70,240 110,205 150,195 190,160 230,140 270,110 310,90 350,60" fill="none" stroke="var(--ink-on-dark)" stroke-width="2.5"/>
+          <g id="fitDots" fill="var(--signal-red)">
+            <circle cx="70" cy="240" r="6"/>
+            <circle cx="110" cy="205" r="6"/>
+            <circle cx="150" cy="195" r="6"/>
+            <circle cx="190" cy="160" r="6"/>
+            <circle cx="230" cy="140" r="6"/>
+            <circle cx="270" cy="110" r="6"/>
+            <circle cx="310" cy="90" r="6"/>
+            <circle cx="350" cy="60" r="6"/>
+          </g>
+          <text x="50" y="295" font-family="IBM Plex Mono" font-size="11" fill="var(--steel)">EXPERIMENTAL</text>
+          <text x="20" y="20" font-family="IBM Plex Mono" font-size="11" fill="var(--steel)" transform="rotate(-90 20 150)">PREDICTED</text>
+          <text x="330" y="35" font-family="IBM Plex Mono" font-size="13" fill="var(--ink-on-dark)">R² = 0.974</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features" id="features">
+    <div class="wrap">
+      <p class="section-eyebrow">CAPABILITIES</p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Equation parser</h3>
+          <p>Paste a GeneXproTools function directly into the app. No file conversion, no manual retyping of terms.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Live Excel formulas</h3>
+          <p>Every prediction and every R² cell is a real formula, not a frozen number. Edit the data and the workbook recalculates on its own.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Fit analysis</h3>
+          <p>Predicted vs. experimental plotted automatically, with R², RMSE, MAE, and MAPE computed alongside it.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Sensitivity study</h3>
+          <p>Sweep each input variable one at a time and see exactly how the model responds, variable by variable.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Report export</h3>
+          <p>A live-formula Excel workbook and a PDF report, ready to hand to a reviewer or a supervisor.</p>
+        </article>
+        <article class="feature-card">
+          <h3>No dependencies</h3>
+          <p>Runs as a standalone Windows installer. No Python, no separate libraries to set up.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section howitworks" id="how-it-works">
+    <div class="wrap">
+      <p class="section-eyebrow">HOW IT WORKS</p>
+      <ol class="steps">
+        <li><span class="step-no">01</span><div><h4>Paste the equation</h4><p>Drop in your GeneXproTools Python function as-is.</p></div></li>
+        <li><span class="step-no">02</span><div><h4>Upload the data</h4><p>Bring in your dataset as an Excel or CSV file.</p></div></li>
+        <li><span class="step-no">03</span><div><h4>Map the variables</h4><p>Match each column to the equation's input, and pick the experimental target.</p></div></li>
+        <li><span class="step-no">04</span><div><h4>Review the fit &amp; sensitivity</h4><p>See R², error metrics, and a one-at-a-time sensitivity sweep for every variable.</p></div></li>
+        <li><span class="step-no">05</span><div><h4>Export the report</h4><p>Get a live-formula Excel workbook and a PDF summary in one click.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="section screenshots" id="screenshots">
+    <div class="wrap">
+      <p class="section-eyebrow">EXHIBITS</p>
+      <div class="plate-grid">
+        <figure class="plate">
+          <div class="plate-frame placeholder">Screenshot coming soon</div>
+          <figcaption><span class="plate-no">FIG. 1</span> Equation &amp; Data</figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-frame placeholder">Screenshot coming soon</div>
+          <figcaption><span class="plate-no">FIG. 2</span> Fit Results</figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-frame placeholder">Screenshot coming soon</div>
+          <figcaption><span class="plate-no">FIG. 3</span> Parametric Study</figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-frame placeholder">Screenshot coming soon</div>
+          <figcaption><span class="plate-no">FIG. 4</span> Export</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / TITLE BLOCK -->
+  <section class="section about" id="about">
+    <div class="wrap">
+      <p class="section-eyebrow">ABOUT</p>
+      <p class="about-copy">GEP Automation Tool takes a Gene Expression Programming model straight out of GeneXproTools and turns it into a full validation package — fit statistics, sensitivity behavior, and a report — without hand-building spreadsheets.</p>
+      <div class="title-block">
+        <div class="tb-row"><span class="tb-label">PROJECT</span><span class="tb-value">GEP Automation Tool</span></div>
+        <div class="tb-row"><span class="tb-label">DRAWN BY</span><span class="tb-value">Eng. Ghassan Ajouri</span></div>
+        <div class="tb-row"><span class="tb-label">SUPERVISED BY</span><span class="tb-value">Prof. Yasmin Murad</span></div>
+        <div class="tb-row"><span class="tb-label">SHEET</span><span class="tb-value">1 / 1</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© 2026 GEP Automation Tool</span>
+    <a href="https://github.com/ghassan1998/gep-automation-tool">GitHub repository</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
